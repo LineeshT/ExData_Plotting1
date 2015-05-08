@@ -14,6 +14,9 @@ hpc <- hpc[,c(3:10)]
 
 #Convert to numeric type
 hpc$Global_active_power <- as.numeric(as.character(hpc$Global_active_power))
+hpc$Sub_metering_1 <- as.numeric(as.character(hpc$Sub_metering_1))
+hpc$Sub_metering_2 <- as.numeric(as.character(hpc$Sub_metering_2))
+hpc$Sub_metering_3 <- as.numeric(as.character(hpc$Sub_metering_3))
 
 #Draw plot in file
 png(filename = "plot2.png", width = 480, height = 480, units = "px")
